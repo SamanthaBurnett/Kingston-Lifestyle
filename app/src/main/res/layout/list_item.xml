@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="@dimen/image_dimen"
+        android:layout_height="match_parent"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dimen"
+        android:orientation="vertical"
+        android:background="@color/view_background"
+        android:paddingLeft="@dimen/padding">
+        <TextView
+            android:id="@+id/location_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textSize="@dimen/list_name_dimen"
+            android:textColor="@color/name_color"
+            tools:text="@string/dummy_name"/>
+
+        <TextView
+            android:id="@+id/location_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textStyle="italic"
+            android:textSize="@dimen/list_info_dimen"
+            android:textColor="@color/info_color"
+            tools:text="@string/dummy_info"/>
+
+    </LinearLayout>
+
+</LinearLayout>
